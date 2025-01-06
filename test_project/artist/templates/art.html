@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Арт-галерея Мікеланджело</title>
+    <!-- Підключення Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+    img{
+         width: 100%;/*290px */
+        height: 250px;
+        /* object-fit: cover; */
+    }
+</style>
+<body>
+    <!-- Верхнє меню -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Арт-галерея Мікеланджело</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Головна</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#gallery">Галерея</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Головний заголовок -->
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Арт-галерея Мікеланджело</h1>
+            <p class="lead">Найвидатніші твори мистецтва епохи Відродження</p>
+        </div>
+    </header>
+
+    <!-- Галерея -->
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Галерея робіт</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://radiovan.fm/uploads/article/10935f58387584b1a_5f58387581610.jpg" class="card-img-top" alt="Давид">
+                        <div class="card-body">
+                            <h5 class="card-title">Статуя "Давид"</h5>
+                            <p class="card-text">Створена між 1501 і 1504 роками, статуя є символом мужності та краси.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://uploads4.wikiart.org/00255/images/michelangelo/michelangelo-creation-of-adam-cropped.jpg!Large.jpg" class="card-img-top" alt="Сотворення Адама" >
+                        <div class="card-body">
+                            <h5 class="card-title">"Сотворення Адама"</h5>
+                            <p class="card-text">Фреска на стелі Сикстинської капели, яка стала символом божественного творення.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Michelangelo%27s_Pieta_5450_cut_out.png" class="card-img-top" alt="П'єта" >
+                        <div class="card-body">
+                            <h5 class="card-title">"П'єта"</h5>
+                            <p class="card-text">Емоційна скульптура, що зображує Марію, яка тримає тіло Христа.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/%27Moses%27_by_Michelangelo_JBU160.jpg/1200px-%27Moses%27_by_Michelangelo_JBU160.jpg" class="card-img-top" alt="Мойсей" >
+                        <div class="card-body">
+                            <h5 class="card-title">Статуя "Мойсей"</h5>
+                            <p class="card-text">Скульптура, створена для гробниці папи Юлія II, показує силу та мудрість.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Michelangelo_-_Cristo_Juiz.jpg/300px-Michelangelo_-_Cristo_Juiz.jpg" class="card-img-top" alt="Страшний суд" >
+                        <div class="card-body">
+                            <h5 class="card-title">"Страшний суд"</h5>
+                            <p class="card-text">Монументальне зображення кінця світу на вівтарній стіні Сикстинської капели.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/LibyanSibyl_SistineChapel.jpg/640px-LibyanSibyl_SistineChapel.jpg" class="card-img-top" alt="Лівійська сивіла" >
+                        <div class="card-body">
+                            <h5 class="card-title">"Лівійська сивіла"</h5>
+                            <p class="card-text">Одна з пророчиць, зображених на стелі Сикстинської капели.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <p></p>
+    <!-- Підвал -->
+    <footer class="bg-dark text-white text-center py-3" style=" bottom: 0; width: 100%;">
+        <p class="mb-0">&copy; 2025 Арт-галерея Мікеланджело. Всі права захищені.</p>
+    </footer>
+
+    <!-- Підключення Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
