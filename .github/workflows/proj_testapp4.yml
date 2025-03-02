@@ -31,7 +31,7 @@ jobs:
       with:
         push: true
         tags: mcr.microsoft.com/${{ secrets.AzureAppService_ContainerUsername_818966fc5b684545892d360da8e9eac8 }}/hipoint/app:${{ github.sha }}
-        file: ./test_project/Dockerfile
+        file: ./Dockerfile
 
   deploy:
     runs-on: ubuntu-latest
