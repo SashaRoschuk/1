@@ -146,6 +146,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+Test_env/  # Add this line to ignore the Test_env directory
 
 # Spyder project settings
 .spyderproject
