@@ -22,7 +22,7 @@ jobs:
     - name: Log in to registry
       uses: docker/login-action@v2
       with:
-        registry: hipoint.azurecr.io/hipoint-app:${{ github.sha }}
+        registry: hipoint.azurecr.io/hipoint/app:${{ github.sha }}
         username: ${{ secrets.AzureAppService_ContainerUsername_aed5d251493a49da8891b3e2bef19918 }}
         password: ${{ secrets.AzureAppService_ContainerPassword_dd3b4bab18c3496b9a783e04cc0a8c78 }}
 
@@ -48,4 +48,4 @@ jobs:
         app-name: 'testapp4'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_f7935bc58fef47159a6c88322f0cb90d }}
-        images: 'mcr.microsoft.com/${{ secrets.AzureAppService_ContainerUsername_aed5d251493a49da8891b3e2bef19918 }}/hipoint-app:${{ github.sha }}'
+        images: 'mcr.microsoft.com/${{ secrets.AzureAppService_ContainerUsername_aed5d251493a49da8891b3e2bef19918 }}/hipoint/app:${{ github.sha }}'
